@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhojyam | www.Subhojyam.com</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        p {
+            font-style: bold;
+            font-size: 18px;
+        }
+
+        .sec_heading {
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+
+        #navbar::before {
+            content: "";
+            position: absolute;
+            background-color: black;
+            height: 75px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        nav {
+            position: sticky;
+        }
+
+        #navbar ul {
+            padding: 13px 5px;
+
+        }
+
+        #logo img {
+            display: inline-block;
+            padding: 2px;
+            height: 65px;
+        }
+
+        #navbar ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 0px;
+            padding: 6px 25px;
+            color: white;
+            background-color: black;
+            border-radius: 24px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #navbar ul li a:hover {
+            text-decoration: none;
+            color: rgb(170, 18, 18);
+
+        }
+
+        #search_bar {
+            margin-left: 500px;
+            position: sticky;
+            right: 10px;
+            top: auto;
+            height: 38px;
+            margin: 17px;
+            background-color: rgb(192, 184, 184);
+            border: 2px solid #b2b2b2;
+            border-radius: 24px;
+            width: 213px;
+        }
+
+        #search_bar input {
+            border: 1px solid rgba(49, 49, 49, 0.705);
+            margin: 32px;
+            border-radius: 16px;
+            height: 30px;
+            margin: 4px;
+            /* text-decoration: none; */
+            color: black;
+            cursor: pointer;
+            width: 203px;
+        }
+
+        #search_bar input ::placeholder {
+            color: white;
+        }
+
+
+        #home::before {
+            content: "";
+            position: absolute;
+            background: url('bg.jpg') no-repeat center center/cover;
+            height: 642px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.69;
+        }
+
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 30px 60px;
+        }
+
+        #home p {
+            font-size: 21px;
+            text-shadow: wheat;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 15px;
+            margin: 0px;
+            background-color: rgb(0, 0, 0);
+
+            width: 1fr;
+            height: 100%;
+        }
+
+        .box {
+            background-color: rgb(255, 238, 238);
+            border: 1px dashed black;
+            padding: 10px;
+            margin: 10px;
+            height: 300px;
+            text-align: center;
+            border-radius: 10px;
+
+
+        }
+
+        .box h3 {
+            font-size: 32px;
+            padding-bottom: 6px;
+
+        }
+
+        .container img {
+            height: 130px;
+
+        }
+
+        #Burger {}
+
+        #Pizza {}
+
+        #Desserts {}
+
+        #Biryani {}
+
+        #Chinese {}
+
+        #Cakes {}
+
+        #Ice_Cream {}
+
+        #Beverages {}
+
+        #form {
+            margin: 5px;
+            background-color: #e1e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 2px solid black;
+        }
+
+        #form input {
+
+
+            margin: 4px;
+            padding: 4px;
+            height: 20px;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: rgb(241, 232, 232);
+
+
+        }
+
+        #delivery {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #delivery img {
+            height: 200px;
+
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #social {
+            display: flex;
+            padding: 20px;
+
+        }
+
+        footer img {
+            height: 100px;
+
+        }
+
+        .main_heading {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 80px;
+            margin: 35px;
+            text-align: center;
+        }
+
+        .prim_heading {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 50px;
+            margin: 10px;
+            text-align: center;
+        }
+        h3{
+            padding:10px;
+        }
+
+        .btn {
+            color: black;
+            background-color: rgb(197, 181, 177);
+            border: 1px solid black;
+            padding: 8px;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button {
+            color: black;
+            background-color: rgb(197, 181, 177);
+            border: 1px solid black;
+            padding: 18px;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+
+            color: rgb(255, 255, 255);
+            background-color: rgb(196, 13, 50);
+            cursor: pointer;
+        }
+
+
+        .btn:hover {
+
+            color: rgb(255, 255, 255);
+            background-color: rgb(196, 13, 50);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="MySubhojyam.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#Burger">food</a></li>
+            <li class="item"><a href="#form">Takeaway</a></li>
+            <li class="item"><a href="#delivery">Home Delivery</a></li>
+        </ul>
+        <div id="search_bar">
+            <input type="search" name="search1" placeholder="what would you like to order....">
+        </div>
+    </nav>
+    <main>
+        <sec id="home">
+            <h2 class="main_heading">Subhojyam</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum quod culpa saepe molestias,
+                reiciendis, veniam vero voluptatum aspernatur quaerat laboriosam dolor asperiores eveniet mollitia
+                fugiat itaque voluptatum Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, commodi dolore!
+                Modi quas quod est ea. Minima quibusdam a numquam cumque accusantium. Excepturi magni atque eaque at.
+                Itaque ex impedit ipsam!a?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus reiciendis perspiciatis odit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <input class="btn" type="button" value="Order Now">
+        </sec>
+        <h2 class="prim_heading">Explore Menu</h2>
+        <div class="container">
+            <div id="Burger" class="box">
+                <h3>Burger</h3>
+                <img src="1.png" alt="burger">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro laborum nesciunt error? Soluta
+                    asperiores porro commodi aspernatur labore, excepturi ab repellendus ex minus?</p>
+            </div>
+            <div id="Pizza" class="box">
+                <h3>Pizza</h3>
+                <img src="pizza-1.png" alt="pizza">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro laborum nesciunt error? Soluta
+                    asperiores porro commodi aspernatur labore, excepturi ab repellendus ex minus?</p>
+            </div>
+            <div id="Desserts" class="box">
+                <h3>Desserts</h3>
+                <img src="dessert.png" alt="dessert">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quas repudiandae corporis nostrum
+                    nisi minus ratione eaque, quidem eligendi sequi? Dolorem, quisquam sint.</p>
+            </div>
+            <div id="Biryani" class="box">
+                <h3>Biryani</h3>
+                <img src="biryani.png" alt="biryani">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, assumenda voluptas harum, a inventore
+                    omnis similique, sed impedit dolor suscipit deleniti earum id.</p>
+            </div>
+            <div id="Chinese" class="box">
+                <h3>Chinese</h3>
+                <img src="chinese.png" alt="chinese">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquam id veritatis velit
+                    nesciunt reprehenderit repellendus, maxime tempora sit nulla. Minus, molestias non.</p>
+            </div>
+            <div id="Cakes" class="box">
+                <h3>Cakes</h3>
+                <img src="cake.png" alt="cake">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero natus ut distinctio sequi. Provident
+                    ipsum perspiciatis, quis illum est eaque nobis odio voluptas corrupti?</p>
+            </div>
+            <div id="Ice_Cream" class="box">
+                <h3>Ice Cream</h3>
+                <img src="icecream.png" alt="icecream">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolor commodi facilis eum odio totam
+                    porro iure obcaecati sed quaerat nesciunt cupiditate, nulla hic adipisci?</p>
+            </div>
+            <div id="Beverages" class="box">
+                <h3>Beverages</h3>
+                <img src="beverage.png" alt="beverage">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio quaerat explicabo officiis,
+                    soluta tempore, sequi aut obcaecati cupiditate possimus quis necessitatibus sint?</p>
+            </div>
+        </div>
+        <sec id="form" class="userform">
+            <h3 class="prim_heading">User Account</h3>
+            <div>
+                <form action="/action.php">
+                    <label for="name">Name :</label>
+                    <input type="text" placeholder="Enter Your Name"><br>
+                    <label for="Phone">Mobile Number :</label>
+                    <input type="tel" placeholder="Enter Your Mobile Number"><br>
+                    <label for="name">Email :</label>
+                    <input type="email" placeholder="Enter Your Email"><br>
+                    <label for="cities">city :<input type="text" list="cities"></label>
+                    <datalist id="cities">
+                        <option value="Pune"></option>
+                        <option value="Mumbai"></option>
+                        <option value="Nagpur"></option>
+                        <option value="Delhi"></option>
+                        <option value="Jaipur"></option>
+                    </datalist><br>
+                    <input class="button" type="button" value="create_account">
+                </form>
+            </div>
+        </sec>
+        <div id="delivery">
+            <h3>Select your delivery location</h3>
+            <a href="https://googlemaps.com" target="_blank"><img src="2.png" alt="deliveryboy"></a>
+        </div>
+
+    </main>
+    <footer>
+        <h3>follow Us on</h3>
+        <div id="social">
+            <img src="facebook.png" alt="facebook">
+            <img src="insta.png" alt="instagram">
+            <img src="twitter.png" alt="twitter">
+            <img src="swiggy.png" alt="swiggy">
+            <img src="zomato.png" alt="zomato">
+        </div>
+        <p> www.subhojyam.com| All &copy;copyrights are resevered| 2020</p>
+    </footer>
+</body>
+
+</html>
