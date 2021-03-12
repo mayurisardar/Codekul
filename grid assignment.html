@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .myform{
+            display: grid;
+            grid-template-areas: "comments contact"
+            "...button";
+            
+            grid-template-columns:12em 1fr ;
+            grid-template-rows: 12em 2em;
+            grid-gap: 8em;
+            background: whitesmoke;
+            padding: 1.2em;
+        }
+        .myform label{
+            grid-area: labels;
+
+        }
+        .myform input{
+            grid-area: contact;
+            width: 100%;
+            padding: 1.1em;
+            margin-bottom: 1em;
+
+        }
+        .myform textarea{
+            width: "10%";
+            height: "600%";
+        }
+        #comment-box{
+            grid-area: comments;
+            
+    
+
+            
+        }
+        .myform button{
+            grid-area: button;
+            background: blue;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <form class="myform">
+        <div id=comments-box>
+            <textarea name="comments" cols="25%" rows="30%" ></textarea>
+        </div>
+        <div id="contact-details">
+        <label>Full Name</label>
+        <input type="text" height="30%" width="30%">
+        <label>Email address</label> 
+        <input type="email" height="30%" width="30%">
+        <br><br>
+        <label>Message</label>
+        <input type="message" height="60%" width="60%">
+        
+        
+
+       </div>
+        
+        <button>Send message</button>
+    </form>
+
+    
+</body>
+</html>
