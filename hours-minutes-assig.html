@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // var hours = prompt("please enter hours:");
+       // var minutes = hours * 60;
+        //console.log(minutes + "minutes");
+
+
+        function time_convert(num)
+ { 
+  var hours = Math.floor(num / 60);  
+  var minutes = num % 60;
+  return hours + ":" + minutes;         
+}
+
+console.log(time_convert(78));
+console.log(time_convert(150));
+console.log(time_convert(1321));
+
+    </script>
+</body>
+</html>
